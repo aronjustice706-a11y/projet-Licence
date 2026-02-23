@@ -1,0 +1,451 @@
+/* CSS pour forcer le layout fixe - Version ULTRA ROBUSTE */
+* {
+  box-sizing: border-box !important;
+}
+
+body {
+  margin: 0 !important;
+  padding: 0 !important;
+  overflow-x: hidden !important;
+  font-family: 'Nunito', sans-serif !important;
+}
+
+/* ===== SIDEBAR FIXE ===== */
+#accordionSidebar,
+.sidebar {
+  position: fixed !important;
+  top: 0 !important;
+  left: 0 !important;
+  height: 100vh !important;
+  z-index: 1030 !important;
+  width: 250px !important;
+  overflow-y: auto !important;
+  background: linear-gradient(180deg, #4e73df 10%, #224abe 100%) !important;
+  transition: transform 0.3s ease !important;
+}
+
+/* ===== TOPBAR FIXE ===== */
+#topbar,
+.topbar,
+.navbar {
+  position: fixed !important;
+  top: 0 !important;
+  left: 250px !important;
+  right: 0 !important;
+  z-index: 1040 !important;
+  height: 70px !important;
+  background-color: white !important;
+  box-shadow: 0 0.15rem 1.75rem 0 rgba(58, 59, 69, 0.15) !important;
+  border-bottom: 1px solid #e3e6f0 !important;
+}
+
+/* ===== CONTENU PRINCIPAL ===== */
+#content-wrapper,
+#content,
+.container-fluid,
+.main-content {
+  margin-left: 250px !important;
+  padding-top: 70px !important;
+  width: calc(100% - 250px) !important;
+  min-height: calc(100vh - 70px) !important;
+  background-color: #f8f9fc !important;
+  position: relative !important;
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+  margin-right: 0 !important;
+}
+
+/* ===== WRAPPER PRINCIPAL ===== */
+#wrapper {
+  margin-left: 0 !important;
+  width: 100% !important;
+  overflow-x: hidden !important;
+}
+
+/* ===== CONTAINER FLUID SPÉCIFIQUE ===== */
+.container-fluid {
+  padding: 1.5rem !important;
+  margin-left: 250px !important;
+  padding-top: 70px !important;
+  width: calc(100% - 250px) !important;
+  min-height: calc(100vh - 70px) !important;
+  background-color: #f8f9fc !important;
+  position: relative !important;
+  margin-right: 0 !important;
+  padding-left: 1.5rem !important;
+  padding-right: 1.5rem !important;
+}
+
+/* ===== CARDS ET CONTENEURS ===== */
+.card {
+  margin-bottom: 1.5rem !important;
+  border: 1px solid #e3e6f0 !important;
+  box-shadow: 0 0.15rem 1.75rem 0 rgba(58, 59, 69, 0.15) !important;
+  border-radius: 0.35rem !important;
+  width: 100% !important;
+}
+
+.card-header {
+  background-color: #f8f9fc !important;
+  border-bottom: 1px solid #e3e6f0 !important;
+  width: 100% !important;
+}
+
+/* ===== CARD BODY - LARGEUR COMPLÈTE ===== */
+.card-body {
+  width: 100% !important;
+  padding: 1.25rem !important;
+  flex: 1 1 auto !important;
+  -webkit-box-flex: 1 !important;
+  -ms-flex: 1 1 auto !important;
+  box-sizing: border-box !important;
+}
+
+/* ===== TABLES ===== */
+.table-responsive {
+  overflow-x: auto !important;
+  border: 1px solid #e3e6f0 !important;
+  border-radius: 0.35rem !important;
+  width: 100% !important;
+}
+
+.table {
+  margin-bottom: 0 !important;
+  width: 100% !important;
+}
+
+.table th,
+.table td {
+  vertical-align: middle !important;
+  padding: 0.75rem !important;
+  border-top: 1px solid #e3e6f0 !important;
+}
+
+.table thead th {
+  background-color: #f8f9fc !important;
+  border-bottom: 2px solid #e3e6f0 !important;
+  font-weight: 600 !important;
+}
+
+/* ===== GRILLE BOOTSTRAP ===== */
+.row {
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+  width: 100% !important;
+}
+
+.col-md-1, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, 
+.col-md-7, .col-md-8, .col-md-9, .col-md-10, .col-md-11, .col-md-12 {
+  padding-left: 15px !important;
+  padding-right: 15px !important;
+}
+
+/* ===== BOUTONS ET CONTRÔLES ===== */
+.btn {
+  border-radius: 0.35rem !important;
+  font-weight: 500 !important;
+}
+
+.form-control {
+  border-radius: 0.35rem !important;
+  border: 1px solid #d1d3e2 !important;
+}
+
+.form-control:focus {
+  border-color: #bac8f3 !important;
+  box-shadow: 0 0 0 0.2rem rgba(78, 115, 223, 0.25) !important;
+}
+
+/* ===== PAGINATION ===== */
+.pagination {
+  margin-bottom: 0 !important;
+}
+
+.page-link {
+  border-radius: 0.35rem !important;
+  margin: 0 2px !important;
+}
+
+/* ===== FOOTER ===== */
+footer.sticky-footer {
+  margin-left: 250px !important;
+  width: calc(100% - 250px) !important;
+  background-color: white !important;
+  border-top: 1px solid #e3e6f0 !important;
+}
+
+/* ===== MODALS ET OVERLAYS ===== */
+.modal {
+  z-index: 1050 !important;
+}
+
+.modal-backdrop {
+  z-index: 1045 !important;
+}
+
+.dropdown-menu {
+  z-index: 1050 !important;
+}
+
+.tooltip {
+  z-index: 1060 !important;
+}
+
+.popover {
+  z-index: 1060 !important;
+}
+
+/* ===== RESPONSIVE DESIGN ===== */
+@media (max-width: 768px) {
+  #accordionSidebar,
+  .sidebar {
+    transform: translateX(-100%) !important;
+    transition: transform 0.3s ease !important;
+  }
+  
+  #accordionSidebar.show,
+  .sidebar.show {
+    transform: translateX(0) !important;
+  }
+  
+  #topbar,
+  .topbar,
+  .navbar {
+    left: 0 !important;
+    width: 100% !important;
+  }
+  
+  #content-wrapper,
+  #content,
+  .container-fluid,
+  .main-content {
+    margin-left: 0 !important;
+    width: 100% !important;
+    padding-left: 1rem !important;
+    padding-right: 1rem !important;
+  }
+  
+  footer.sticky-footer {
+    margin-left: 0 !important;
+    width: 100% !important;
+  }
+  
+  .table-responsive {
+    font-size: 0.875rem !important;
+  }
+}
+
+/* ===== ANIMATIONS ET TRANSITIONS ===== */
+.fade-in {
+  animation: fadeIn 0.3s ease-in;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(20px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* ===== FIXES SPÉCIFIQUES ===== */
+.navbar-nav {
+  margin-left: auto !important;
+}
+
+.sidebar-brand {
+  height: 70px !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  background-color: rgba(255, 255, 255, 0.1) !important;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1) !important;
+}
+
+.sidebar-brand-text {
+  color: white !important;
+  font-weight: bold !important;
+  font-size: 1.2rem !important;
+}
+
+/* ===== OVERRIDE DES STYLES BOOTSTRAP ===== */
+.container-fluid {
+  padding: 1.5rem !important;
+  max-width: none !important;
+}
+
+.mb-4 {
+  margin-bottom: 1.5rem !important;
+}
+
+.shadow {
+  box-shadow: 0 0.15rem 1.75rem 0 rgba(58, 59, 69, 0.15) !important;
+}
+
+/* ===== FIX POUR LES DATATABLES ===== */
+.dataTables_wrapper {
+  margin-top: 1rem !important;
+  width: 100% !important;
+}
+
+.dataTables_length,
+.dataTables_filter {
+  margin-bottom: 1rem !important;
+}
+
+.dataTables_info,
+.dataTables_paginate {
+  margin-top: 1rem !important;
+}
+
+/* ===== FIX POUR LES ALERTES ===== */
+.alert {
+  border-radius: 0.35rem !important;
+  margin-bottom: 1rem !important;
+  width: 100% !important;
+}
+
+/* ===== FIX POUR LES BADGES ===== */
+.badge {
+  font-size: 0.75rem !important;
+  padding: 0.25rem 0.5rem !important;
+}
+
+/* ===== FIX POUR LES PROGRESS BARS ===== */
+.progress {
+  height: 0.5rem !important;
+  border-radius: 0.35rem !important;
+}
+
+/* ===== FIX POUR LES NAVS ===== */
+.nav-tabs {
+  border-bottom: 1px solid #e3e6f0 !important;
+}
+
+.nav-tabs .nav-link {
+  border-radius: 0.35rem 0.35rem 0 0 !important;
+  border: 1px solid transparent !important;
+}
+
+.nav-tabs .nav-link.active {
+  border-color: #e3e6f0 #e3e6f0 #fff !important;
+  background-color: #fff !important;
+}
+
+/* ===== FIX POUR LES SECTIONS DE CONTENU ===== */
+.content-section {
+  width: 100% !important;
+  margin-bottom: 2rem !important;
+}
+
+/* ===== FIX POUR LES FORMULAIRES ===== */
+.form-group {
+  width: 100% !important;
+}
+
+.form-row {
+  width: 100% !important;
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+}
+
+/* ===== FIX POUR LES CHARTES ===== */
+canvas {
+  width: 100% !important;
+  height: auto !important;
+}
+
+/* ===== FIX POUR LES BOUTONS D'EXPORT ===== */
+.export-buttons {
+  width: 100% !important;
+  text-align: right !important;
+  margin-bottom: 1rem !important;
+}
+
+/* ===== FIX POUR LES SEUILS CRITIQUES ===== */
+.threshold-input {
+  width: 80px !important;
+  display: inline-block !important;
+}
+
+/* ===== FIX POUR LES ALERTES DE RUPTURE ===== */
+.stock-alert {
+  width: 100% !important;
+  margin-bottom: 1rem !important;
+}
+
+/* ===== FIX POUR TOUS LES ÉLÉMENTS DE CONTENU ===== */
+.card-footer {
+  width: 100% !important;
+}
+
+.card-img,
+.card-img-top,
+.card-img-bottom {
+  width: 100% !important;
+}
+
+.card-deck {
+  width: 100% !important;
+}
+
+.card-columns {
+  width: 100% !important;
+}
+
+/* ===== FIX POUR LES SECTIONS SPÉCIFIQUES ===== */
+.sales-section,
+.stock-section,
+.reports-section,
+.statistics-section {
+  width: 100% !important;
+  margin-bottom: 2rem !important;
+}
+
+/* ===== FIX POUR LES CONTAINERS DE CHARTES ===== */
+.chart-container {
+  width: 100% !important;
+  height: auto !important;
+  min-height: 300px !important;
+}
+
+/* ===== FIX POUR LES TABLEAUX DE DONNÉES ===== */
+.data-table-container {
+  width: 100% !important;
+  overflow-x: auto !important;
+}
+
+/* ===== FIX POUR LES FORMULAIRES DE RECHERCHE ===== */
+.search-form {
+  width: 100% !important;
+  margin-bottom: 1rem !important;
+}
+
+/* ===== FIX POUR LES BOUTONS D'ACTION ===== */
+.action-buttons {
+  width: 100% !important;
+  text-align: right !important;
+  margin-bottom: 1rem !important;
+}
+
+/* ===== FIX POUR LES MESSAGES ET NOTIFICATIONS ===== */
+.message-container,
+.notification-container {
+  width: 100% !important;
+  margin-bottom: 1rem !important;
+}
+
+/* ===== FIX POUR LES MODALS ET POPUPS ===== */
+.modal-content {
+  width: 100% !important;
+  max-width: none !important;
+}
+
+.modal-body {
+  width: 100% !important;
+}
+
+.modal-header {
+  width: 100% !important;
+}
+
+.modal-footer {
+  width: 100% !important;
+} 

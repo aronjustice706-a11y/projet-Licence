@@ -1,0 +1,155 @@
+<svg width="600" height="800" viewBox="0 0 600 800" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background gradient -->
+  <defs>
+    <linearGradient id="bgGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#4e73df;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#224abe;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#1e3a8a;stop-opacity:1" />
+    </linearGradient>
+    
+    <linearGradient id="iconGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#ffffff;stop-opacity:0.95" />
+      <stop offset="100%" style="stop-color:#f8f9fc;stop-opacity:0.8" />
+    </linearGradient>
+    
+    <linearGradient id="medicalGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#00d4aa;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#00b894;stop-opacity:1" />
+    </linearGradient>
+    
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="3" result="coloredBlur"/>
+      <feMerge> 
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  
+  <!-- Background -->
+  <rect width="600" height="800" fill="url(#bgGradient)"/>
+  
+  <!-- Decorative medical circles -->
+  <circle cx="100" cy="150" r="80" fill="url(#iconGradient)" opacity="0.1"/>
+  <circle cx="500" cy="250" r="60" fill="url(#iconGradient)" opacity="0.08"/>
+  <circle cx="80" cy="600" r="100" fill="url(#iconGradient)" opacity="0.06"/>
+  <circle cx="520" cy="700" r="70" fill="url(#iconGradient)" opacity="0.1"/>
+  
+  <!-- Main PARAMEDIC Logo -->
+  <g transform="translate(150, 200)">
+    <!-- Logo background circle -->
+    <circle cx="150" cy="150" r="120" fill="url(#iconGradient)" opacity="0.9"/>
+    
+    <!-- Medical cross -->
+    <g transform="translate(150, 150)">
+      <!-- Vertical line of cross -->
+      <rect x="-8" y="-40" width="16" height="80" fill="url(#medicalGradient)" rx="2"/>
+      <!-- Horizontal line of cross -->
+      <rect x="-40" y="-8" width="80" height="16" fill="url(#medicalGradient)" rx="2"/>
+    </g>
+    
+    <!-- Arcs around the cross -->
+    <g transform="translate(150, 150)">
+      <!-- Inner arc (left side) -->
+      <path d="M -60 -60 A 80 80 0 0 1 -60 60" stroke="url(#medicalGradient)" stroke-width="6" fill="none" opacity="0.8"/>
+      <!-- Outer arc (right side) -->
+      <path d="M -80 -80 A 100 100 0 0 1 -80 80" stroke="#333333" stroke-width="4" fill="none" opacity="0.6"/>
+    </g>
+    
+    <!-- PARAMEDIC text -->
+    <text x="150" y="320" text-anchor="middle" fill="#333333" font-family="Arial, sans-serif" font-size="28" font-weight="bold">
+      PARAMEDIC
+    </text>
+  </g>
+  
+  <!-- Medical equipment icons -->
+  <g transform="translate(50, 450)">
+    <!-- Stethoscope -->
+    <g fill="url(#iconGradient)" opacity="0.8">
+      <circle cx="30" cy="30" r="15"/>
+      <circle cx="70" cy="30" r="15"/>
+      <path d="M 30 30 Q 50 10 70 30" stroke="url(#iconGradient)" stroke-width="8" fill="none" opacity="0.8"/>
+      <path d="M 50 10 Q 50 5 50 0" stroke="url(#iconGradient)" stroke-width="6" fill="none" opacity="0.8"/>
+    </g>
+    
+    <!-- Medical bag -->
+    <g transform="translate(120, 0)">
+      <rect x="0" y="20" width="60" height="40" fill="url(#iconGradient)" opacity="0.8" rx="5"/>
+      <rect x="0" y="20" width="60" height="8" fill="url(#medicalGradient)" opacity="0.6" rx="5"/>
+      <circle cx="30" cy="40" r="3" fill="url(#medicalGradient)" opacity="0.8"/>
+    </g>
+    
+    <!-- Syringe -->
+    <g transform="translate(200, 10)">
+      <rect x="0" y="20" width="40" height="6" fill="url(#iconGradient)" opacity="0.8" rx="3"/>
+      <rect x="40" y="18" width="8" height="10" fill="url(#medicalGradient)" opacity="0.8" rx="2"/>
+      <rect x="0" y="20" width="8" height="6" fill="url(#medicalGradient)" opacity="0.6" rx="3"/>
+    </g>
+  </g>
+  
+  <!-- Emergency vehicle -->
+  <g transform="translate(350, 500)">
+    <!-- Ambulance body -->
+    <rect x="0" y="40" width="120" height="50" fill="url(#iconGradient)" opacity="0.9" rx="5"/>
+    <!-- Ambulance cabin -->
+    <rect x="80" y="20" width="40" height="30" fill="url(#iconGradient)" opacity="0.8" rx="3"/>
+    <!-- Wheels -->
+    <circle cx="25" cy="90" r="12" fill="#333333" opacity="0.8"/>
+    <circle cx="95" cy="90" r="12" fill="#333333" opacity="0.8"/>
+    <!-- Medical cross on ambulance -->
+    <g transform="translate(60, 65)">
+      <rect x="-3" y="-8" width="6" height="16" fill="url(#medicalGradient)" rx="1"/>
+      <rect x="-8" y="-3" width="16" height="6" fill="url(#medicalGradient)" rx="1"/>
+    </g>
+  </g>
+  
+  <!-- Medical charts and data -->
+  <g transform="translate(50, 100)">
+    <!-- Chart bars -->
+    <rect x="0" y="40" width="8" height="20" fill="url(#iconGradient)" opacity="0.8"/>
+    <rect x="12" y="30" width="8" height="30" fill="url(#iconGradient)" opacity="0.8"/>
+    <rect x="24" y="20" width="8" height="40" fill="url(#iconGradient)" opacity="0.8"/>
+    <rect x="36" y="35" width="8" height="25" fill="url(#iconGradient)" opacity="0.8"/>
+    <!-- Chart line -->
+    <path d="M 0 40 Q 6 30 12 30 Q 18 20 24 20 Q 30 35 36 35" stroke="url(#medicalGradient)" stroke-width="2" fill="none" opacity="0.8"/>
+  </g>
+  
+  <!-- Medical supplies -->
+  <g transform="translate(450, 150)">
+    <!-- Bandage -->
+    <rect x="0" y="0" width="40" height="25" fill="url(#iconGradient)" opacity="0.8" rx="3"/>
+    <line x1="5" y1="12.5" x2="35" y2="12.5" stroke="url(#medicalGradient)" stroke-width="2" opacity="0.6"/>
+    
+    <!-- Medicine bottle -->
+    <g transform="translate(0, 35)">
+      <rect x="0" y="0" width="30" height="40" fill="url(#iconGradient)" opacity="0.8" rx="3"/>
+      <rect x="0" y="0" width="30" height="8" fill="url(#medicalGradient)" opacity="0.6" rx="3"/>
+      <text x="15" y="25" text-anchor="middle" fill="#333333" font-family="Arial" font-size="8" font-weight="bold">MED</text>
+    </g>
+  </g>
+  
+  <!-- Connection lines representing medical network -->
+  <g stroke="url(#iconGradient)" stroke-width="2" opacity="0.3" fill="none">
+    <path d="M 300 300 Q 350 250 400 300"/>
+    <path d="M 200 400 Q 250 350 300 400"/>
+    <path d="M 100 500 Q 150 450 200 500"/>
+  </g>
+  
+  <!-- Floating medical particles -->
+  <g fill="url(#iconGradient)" opacity="0.4">
+    <circle cx="50" cy="100" r="3"/>
+    <circle cx="550" cy="150" r="2"/>
+    <circle cx="100" cy="300" r="4"/>
+    <circle cx="500" cy="400" r="3"/>
+    <circle cx="150" cy="600" r="2"/>
+    <circle cx="450" cy="650" r="3"/>
+  </g>
+  
+  <!-- Title text -->
+  <text x="300" y="750" text-anchor="middle" fill="url(#iconGradient)" font-family="Arial, sans-serif" font-size="24" font-weight="bold" opacity="0.9">
+    Système de Gestion
+  </text>
+  <text x="300" y="775" text-anchor="middle" fill="url(#iconGradient)" font-family="Arial, sans-serif" font-size="16" opacity="0.7">
+    PARAMEDIC
+  </text>
+</svg> 

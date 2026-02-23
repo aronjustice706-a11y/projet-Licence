@@ -1,0 +1,213 @@
+
+
+RAPPORT DE STAGE ACADEMIQUE
+
+Effectué du 01 mars 2025 au 31 mai 2025 à Paramedic group Sarl en vue de l’obtention du Diplôme de Licence en Génie Logiciel et Base de Données (GLBD)
+
+Rédigé et présenté par : 
+TENE TENE JUSTICE AUBIN
+Sous la supervision  
+Professionnelle de : Mme TENE SIBERT.W (Directrice générale de Paramedic)  
+Académique de : Mme MEKOMBI JEAN (Enseignant à l’IUS)
+
+Année Académique 2024-2025
+
+---
+
+SOMMAIRE
+I. DEDICACE
+II. REMERCIEMENTS
+III. AVANT PROPOS
+IV. LISTE DES TABLEAUX
+V. LISTE DES FIGURES
+VI. LISTE DES SIGLES ET ABREVIATIONS
+VII. RESUME
+VIII. ABSTRACT
+IX. INTRODUCTION GENERALE
+X. PARTIE I : PRESENTATION GENERALE DE L’ENTREPRISE ET ETAT DES LIEUX
+    - CHAPITRE I : PRESENTATION DE L’ENTREPRISE ET DEROULEMENT DU STAGE
+    - CHAPITRE II : ANALYSE DU SYSTEME DE GESTION DU PERSONNEL ACTUEL
+XI. PARTIE II :  MISE EN PLACE DU FUTUR SYSTEME
+    - CHAPITRE III : CONCEPTION DU FUTUR SYSTEME
+    - CHAPITRE IV : PRESENTATION DE LA SOLUTION
+XII. CONCLUSION GENERALE
+XIII. REFERENCE BIBLIOGRAPHIQUES
+XIV. TABLE DE MATIERES
+
+---
+
+DEDICACE
+
+A ma famille, à mes encadreurs, à mes collègues et à tous ceux qui ont contribué à la réussite de ce stage.
+
+---
+
+REMERCIEMENTS
+
+Ce travail est une synergie d’efforts et n’aurait été possible sans la contribution d’un bon nombre de personnes. Mes sincères remerciements s’adressent à tous ceux qui ont œuvré de près ou de loin à l’accomplissement de ce travail. Je tiens toutefois à accorder une place particulière à l’honorable WANTOU LUCIEN, à mon encadreur académique Monsieur MEKOMBI JEAN, au Chef de l’entreprise PARAMEDIC Monsieur GAYMA GUILLAUME, à mon encadreur professionnel Mme TENE SIBERT WILLA, à mes enseignants, à mes collègues de PARAMEDIC et à ma promotion.
+
+---
+
+AVANT PROPOS
+
+La Licence Professionnelle (LP) au Cameroun est un diplôme de niveau Bac+3, conçu pour une insertion professionnelle rapide, en réponse aux besoins spécifiques du marché du travail. Elle est mise en place en partenariat avec les entreprises et vise à apporter aux étudiants des compétences professionnelles pointues. Ce diplôme permet au titulaire de se préparer à entrer dans le milieu professionnel. Pour atteindre cet objectif, il est recommandé à chaque étudiant(e) ayant reçu une formation technique au sein d’un établissement, d’effectuer un stage académique dans une organisation afin de relier la théorie et la pratique. À cet effet, l’étudiant est tenu de rédiger un rapport de stage qu’il défendra devant le jury. C’est ainsi que nous avons eu à effectuer notre stage au sein de l’entreprise PARAMEDIC au terme duquel nous présentons ce rapport.
+
+---
+
+RESUME
+
+Ce rapport présente le déroulement et les résultats d’un stage académique effectué à Paramedic group Sarl, dans le cadre de l’obtention de la Licence en Génie Logiciel et Base de Données. L’objectif principal était la conception et la réalisation d’une application intelligente de gestion de stock intégrant un assistant IA conversationnel, afin d’optimiser la gestion des stocks, d’automatiser les processus et d’améliorer l’expérience utilisateur au sein de l’entreprise.
+
+---
+
+ABSTRACT
+
+This report presents the progress and results of an academic internship at Paramedic group Sarl, as part of the requirements for a Bachelor’s degree in Software Engineering and Databases. The main objective was the design and development of an intelligent stock management application with an integrated conversational AI assistant, to optimize stock management, automate processes, and enhance user experience within the company.
+
+---
+
+INTRODUCTION GENERALE
+
+Dans un contexte économique en constante évolution, la gestion efficace des stocks est un enjeu majeur pour les entreprises. L’intégration des technologies de l’information, et plus récemment de l’intelligence artificielle, permet d’optimiser les processus, de réduire les erreurs et d’améliorer la prise de décision. Ce rapport retrace l’ensemble du processus ayant conduit à la conception et à la mise en œuvre d’une application intelligente de gestion de stock, enrichie d’un assistant IA, au sein de Paramedic group Sarl.
+
+---
+
+PARTIE I : PRESENTATION GENERALE DE L’ENTREPRISE ET ETAT DES LIEUX
+
+CHAPITRE I : PRESENTATION DE L’ENTREPRISE ET DEROULEMENT DU STAGE
+
+1. Fiche signalétique de l’entreprise
+- Nom : Paramedic group Sarl
+- Date de création : 2016
+- Secteur d’activité : Commercialisation du matériel médical
+- Adresse : Yaoundé (Mairie Etoug-Ebe)
+- Ville : Yaoundé
+- Site internet : https://paramedic.com
+
+2. Présentation de la structure
+PARAMEDIC est une entreprise dynamique, engagée dans la transformation digitale, spécialisée dans la commercialisation de matériel médical pour les hôpitaux et cliniques de la région de Yaoundé.
+
+3. Plan de localisation et organigramme
+(Les détails et schémas sont à insérer selon les annexes de l’entreprise)
+
+4. Déroulement du stage
+Le stage s’est déroulé du 01 mars au 31 mai 2025. Il a permis de découvrir le fonctionnement interne de l’entreprise, de participer à la gestion des stocks, aux inventaires, à la gestion des plateformes numériques et à la réalisation d’un projet de développement logiciel.
+
+5. Tâches et missions effectuées
+- Vérification des niveaux de stock
+- Participation aux inventaires physiques
+- Suivi des flux de produits
+- Développement d’une application de gestion de stock
+
+6. Difficultés rencontrées
+- Informations dispersées et archivage manuel
+- Outils de travail rudimentaires
+- Absence d’application pour la gestion automatisée des stocks
+
+---
+
+CHAPITRE II : ANALYSE DU SYSTEME DE GESTION DU PERSONNEL ACTUEL
+
+1. Étude de l’existant
+L’analyse de l’existant a révélé une gestion manuelle des stocks, source d’erreurs, de pertes de temps et de difficultés dans le suivi des transactions et des inventaires.
+
+2. Critique de l’existant
+- Perte de traces historiques
+- Recherches fastidieuses
+- Inventaires difficiles
+- Suivi complexe des transactions
+
+3. Solutions proposées
+La solution proposée consiste en la conception et la mise en place d’une application web intelligente de gestion de stock, intégrant un assistant IA pour automatiser les processus, faciliter la recherche d’informations et améliorer la prise de décision.
+
+---
+
+PARTIE II : MISE EN PLACE DU FUTUR SYSTEME
+
+CHAPITRE III : CONCEPTION DU FUTUR SYSTEME
+
+1. Méthodologie et outils
+- Méthode de développement : 2TUP (Two Track Unified Process)
+- Langage de modélisation : UML (diagrammes de cas d’utilisation, de classes, de séquence)
+- Outils : Visual Studio Code, PHP, MySQL, JavaScript, HTML, CSS, Bootstrap
+
+2. Analyse fonctionnelle
+- Gestion des utilisateurs et des droits
+- Gestion des produits, fournisseurs, clients, transactions
+- Automatisation des inventaires et des alertes
+- Intégration d’un assistant IA conversationnel
+
+3. Modélisation UML
+- Diagramme de cas d’utilisation : gestion des stocks, ventes, alertes, consultation via IA
+- Diagramme de classes : structure des entités (produit, utilisateur, transaction, etc.)
+- Diagramme de séquence : scénarios d’authentification, de vente, d’interaction avec l’IA
+
+---
+
+CHAPITRE IV : PRESENTATION DE LA SOLUTION
+
+1. Aperçu du système développé
+L’application développée, baptisée « G-STOCK », est une solution web de gestion de stock enrichie d’un assistant IA. Elle permet la gestion complète des produits, des entrées et sorties de stock, des ventes, des fournisseurs, des clients, et propose un module de rapports et statistiques avancés.
+
+2. Fonctionnalités principales
+- Tableau de bord interactif
+- Gestion des produits, clients, fournisseurs, employés
+- Gestion des ventes et des transactions
+- Inventaire en temps réel
+- Alertes de seuil critique et ruptures de stock
+- Rapports et statistiques exportables
+- Assistant IA conversationnel (texte et voix)
+
+3. Intégration de l’Assistant IA
+L’innovation majeure de l’application réside dans l’intégration d’un assistant IA conversationnel, accessible via une interface de chat moderne. L’utilisateur peut poser des questions en français, par texte ou par voix, et obtenir instantanément des réponses sur l’état des stocks, les ventes, les ruptures, les clients, etc. L’IA est capable d’effectuer des recherches intelligentes dans la base de données, de générer des rapports, d’alerter sur les seuils critiques et même de mettre à jour le stock sur commande.
+
+4. Avantages de l’IA intégrée
+- Accessibilité universelle (texte et voix)
+- Gain de temps considérable
+- Réduction des erreurs humaines
+- Automatisation des tâches répétitives
+- Prise de décision facilitée
+- Amélioration de la satisfaction utilisateur
+- Image innovante pour l’entreprise
+
+5. Schéma du fonctionnement de l’IA
+(Vous pouvez insérer ici le schéma généré à partir du diagramme Mermaid fourni dans la documentation, en utilisant un outil comme mermaid.live pour obtenir une image PNG/SVG)
+
+Exemple d’instruction :
+« Insérer ici le schéma du fonctionnement de l’IA (voir documentation, section 9) »
+
+6. Tests et validation
+Des tests fonctionnels et utilisateurs ont été réalisés pour valider la robustesse, la sécurité et l’ergonomie de l’application. Les retours ont permis d’ajuster l’interface et d’optimiser les performances.
+
+7. Limites et perspectives
+Des évolutions sont envisagées, telles que l’intégration de l’apprentissage automatique, le support multilingue, l’extension à la gestion éco-responsable des stocks et la connexion à la chaîne logistique étendue.
+
+---
+
+CONCLUSION GENERALE
+
+Ce stage a permis de mettre en pratique les compétences acquises en génie logiciel et en base de données, à travers la conception et la réalisation d’une application innovante de gestion de stock avec assistant IA. L’intégration de l’intelligence artificielle a transformé l’expérience utilisateur et renforcé l’efficacité de la gestion des stocks au sein de Paramedic group Sarl. Cette expérience constitue un atout majeur pour l’insertion professionnelle et ouvre la voie à de futures innovations.
+
+---
+
+REFERENCE BIBLIOGRAPHIQUES
+- Cours de méthode de programmation I et II
+- Cours d’atelier de génie logiciel
+- Cours de base de données relationnelles
+- Documentation technique sur PHP, MySQL, JavaScript, Bootstrap
+- Documentation sur l’intelligence artificielle et les assistants conversationnels
+
+---
+
+TABLE DE MATIERES
+(À générer automatiquement dans Word)
+
+---
+
+Annexes :
+- Diagrammes UML (cas d’utilisation, classes, séquences)
+- Schéma du fonctionnement de l’IA (image à insérer)
+- Captures d’écran de l’application
+
+
+(Le rapport est prêt à être ouvert, complété ou imprimé dans Word. Pour le schéma de l’IA, suivez les instructions précédentes pour l’insérer en image.) 
