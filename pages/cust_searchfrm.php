@@ -45,7 +45,7 @@ if ($Aa=='User'){
 
                       <div class="col-sm-3 text-primary">
                         <h5>
-                          Nom complet<br>
+                          Nom-complet<br>
                         </h5>
                       </div>
 
